@@ -18,7 +18,7 @@ chmod 0600 ~/.ssh/authorized_keys
 ## nvim
 ```sh
 apt install wget -y
-wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 tar -zxvf nvim-linux64.tar.gz
 mv nvim-linux64 /usr/local/nvim
 ln -s /usr/local/nvim/bin/nvim /usr/bin/nvim 
