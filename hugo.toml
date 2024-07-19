@@ -9,7 +9,7 @@ theme = "paper"
   # color style
   color = 'linen'                           # linen, wheat, gray, light
 
-  github = 'cubatic'                 # github.com/YOUR_GITHUB_ID
+  github = 'cubatic45'                 # github.com/YOUR_GITHUB_ID
   rss = true                                # show rss icon
 
   avatar = 'GRAVATAR_EMAIL'                 # gravatar email or image url
