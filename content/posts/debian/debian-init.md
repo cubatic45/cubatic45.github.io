@@ -1,9 +1,17 @@
 +++
 title = 'Debian env init'
 date = 2024-02-22T12:00:05+08:00
+updated = 2024-07-25T16:55:05+08:00
 draft = false
 tags = ['linux', 'debian']
 +++
+
+## add user
+
+```sh
+adduser vb
+usermod -aG sudo vb
+```
 
 ## ssh
 
@@ -31,6 +39,11 @@ echo 'set -s set-clipboard on
 set -g allow-passthrough on
 set -g mouse on
 set-option -g repeat-time 0
+set -s escape-time 10
+
+set -g default-terminal "tmux-256color"
+set-option -sa terminal-overrides ",xterm-256color:RGB"
+
 
 set -wg mode-keys vi
 bind -T copy-mode-vi v send-keys -X begin-selection
