@@ -24,18 +24,20 @@ ALTER USER postgres WITH PASSWORD 'your_password';
 ```
 
 create new user
-```bash
+```sql
 CREATE USER your_username WITH PASSWORD 'your_password';
 ```
 
 create new database
-```bash
+```sql
 CREATE DATABASE your_database_name;
 ```
 
 grant permission to user
-```bash
+```sql
 GRANT ALL PRIVILEGES ON DATABASE your_database_name TO your_username;
+\c your_database_name
+GRANT ALL ON SCHEMA public TO your_username;
 ```
 
 ## Reference
