@@ -1,7 +1,7 @@
 +++
 title = 'Debian env init'
 date = 2024-02-22T12:00:05+08:00
-updated = 2024-07-25T16:55:05+08:00
+updated = 2025-02-10T11:10:05+08:00
 draft = false
 tags = ['linux', 'debian']
 +++
@@ -24,13 +24,22 @@ chmod 0600 ~/.ssh/authorized_keys
 ```
 
 ## nvim
+
+### install
 ```sh
 apt install wget -y
-wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-tar -zxvf nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+tar -zxvf nvim-linux-x86_64.tar.gz
 mv nvim-linux64 /usr/local/nvim
 ln -s /usr/local/nvim/bin/nvim /usr/bin/nvim 
 ```
+
+### config
+```sh
+mkdir -p ~/.config/nvim
+wget https://raw.githubusercontent.com/cubatic45/dotfiles/refs/heads/main/dot_config/nvim/init.lua -O ~/.config/nvim/init.lua
+```
+
 
 ## tmux
 ```sh
