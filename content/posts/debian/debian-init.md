@@ -1,7 +1,7 @@
 +++
 title = 'Debian env init'
 date = 2024-02-22T12:00:05+08:00
-updated = 2025-02-10T11:10:05+08:00
+updated = 2025-02-19T12:06:05+08:00
 draft = false
 tags = ['linux', 'debian']
 +++
@@ -27,11 +27,11 @@ chmod 0600 ~/.ssh/authorized_keys
 
 ### install
 ```sh
-apt install wget -y
-wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-tar -zxvf nvim-linux-x86_64.tar.gz
-mv nvim-linux64 /usr/local/nvim
-ln -s /usr/local/nvim/bin/nvim /usr/bin/nvim 
+sudo apt install wget -y
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz -O nvim-linux-x86_64.tar.gz
+tar -zxf nvim-linux-x86_64.tar.gz
+sudo mv nvim-linux-x86_64 /usr/local/nvim
+sudo ln -s /usr/local/nvim/bin/nvim /usr/bin/nvim 
 ```
 
 ### config
@@ -119,5 +119,12 @@ zinit ice pick"async.zsh" src"pure.zsh" # with zsh-async library that's bundled 
 zinit light sindresorhus/pure
 
 unset zle_bracketed_paste
+
+zi for \
+    atload"zicompinit; zicdreplay" \
+    blockf \
+    lucid \
+    wait \
+  zsh-users/zsh-completions
 
 ```
