@@ -27,9 +27,9 @@ Sometimes we need to change existing numbers, like:
 1 -> 2  # <C-a>
 2 -> 3  # <C-a>
 3 -> 4  # <C-a>
-1 -> 2  # g<C-x>
-2 -> 4  # g<C-x>
-3 -> 6  # g<C-x>
+1 -> 2  # g<C-a>
+2 -> 4  # g<C-a>
+3 -> 6  # g<C-a>
 ```
 We can use C-a (CTRL+A) to increment numbers.
 
