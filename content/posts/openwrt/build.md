@@ -1,5 +1,5 @@
 +++
-title = 'Build'
+title = 'Openwrt Build'
 date = 2025-09-04T11:50:15+08:00
 draft = false
 +++
