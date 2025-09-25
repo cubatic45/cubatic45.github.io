@@ -17,7 +17,8 @@ usermod -aG sudo vb
 
 ```sh
 mkdir ~/.ssh
-echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEY8nuiqZYNWjJMC8I4StHzAcv8pJjHMUCwkvPMaVTWY mac
+echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEY8nuiqZYNWjJMC8I4StHzAcv8pJjHMUCwkvPMaVTWY cubatic@K-MacBook-Pro.local
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGT/tkRgNqlHLAOpZ+cP8Ow9omXhI50ccHI9HCXaJfGN cubatic@KMac-mini.local
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIALgDy+FJMEy/UG/bYjnBEAYmVTLH6qOVJyXzpXADoFX pc' > ~/.ssh/authorized_keys
 chmod 0700 ~/.ssh
 chmod 0600 ~/.ssh/authorized_keys
