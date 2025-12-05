@@ -6,6 +6,12 @@ draft = false
 tags = ['linux', 'debian']
 +++
 
+## bash script
+```
+bash <(wget -qO - https://gist.githubusercontent.com/cubatic45/bd5169a1c9fbc643542be06b59e503a4/raw/7e0075aa3214cddb51ca96dac82d6479b8a688f4/init.sh)
+passwd vb
+```
+
 ## add user
 
 ```sh
